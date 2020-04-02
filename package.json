@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lab": "ionic serve -l"
+    "lab": "npx ionic serve"
   },
   "private": true,
   "dependencies": {

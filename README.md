@@ -2,7 +2,7 @@
 
 This is a exemple of using the routing navigation like v3 in v4
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/104264ea-5e70-429d-8207-edaa485aad67)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/a26567fe-654a-4aad-a373-d99a71690181)
 
 Follow this [Tutorial](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
 
@@ -17,4 +17,4 @@ Follow this [Tutorial](https://www.joshmorony.com/converting-ionic-3-push-pop-na
     npm run lab
     # Or: ionic serve -l
 
-made by [Rodrigo Alves]() :heart:
+made with :heart: by [Rodrigo Alves]() 
