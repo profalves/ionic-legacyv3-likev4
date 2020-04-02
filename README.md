@@ -17,4 +17,4 @@ Follow this [Tutorial](https://www.joshmorony.com/converting-ionic-3-push-pop-na
     npm run lab
     # Or: ionic serve -l
 
-made by [Rodrigo Alves]()
+made by [Rodrigo Alves]() :heart:
