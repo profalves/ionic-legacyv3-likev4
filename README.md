@@ -6,7 +6,7 @@ This is a exemple of using the routing navigation like v3 in v4
 
 Follow this [Tutorial](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
 
-# Running project
+## Running project
 
 1 - Install dependences:
 
@@ -14,7 +14,7 @@ Follow this [Tutorial](https://www.joshmorony.com/converting-ionic-3-push-pop-na
 
 2 - Run project in dev mode:
 
-    npm run lab
+    npm run dev
     # Or: ionic serve -l
 
 made with :heart: by [Rodrigo Alves]() 
