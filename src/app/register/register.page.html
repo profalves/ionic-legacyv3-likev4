@@ -8,7 +8,10 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-button (click)="sendPostRequest()">Post Data</ion-button>
+  <div id="container">
+    <ion-button (click)="sendPostRequest()">Post Data</ion-button>
+    <ion-button (click)="getRequest()">Get API</ion-button>
+    <ion-button (click)="dialogAdd()">Open Modal</ion-button>
+  </div>
 
-  <ion-button (click)="getRequest()">Get API</ion-button>
 </ion-content>
