@@ -10,7 +10,7 @@
 <ion-content>
   <ion-card>
 
-    <img src="{{photoUrl}}" />
+
 
     <ion-card-content>
       <ion-card-title>
@@ -18,20 +18,15 @@
       </ion-card-title>
     </ion-card-content>
 
+    <img src="{{photoUrl}}" class="image" />
+
     <ion-row no-padding>
       <ion-col>
-        <button ion-button color="primary" icon-left (click)="takePhoto('picture')">
+        <ion-button icon-left (click)="takePhoto('picture')">
           <ion-icon name='camera'></ion-icon>
           Tirar Foto
-        </button>
+        </ion-button>
       </ion-col>
-      <ion-col text-center>
-        <button ion-button color="secondary" icon-left>
-          <ion-icon name='albums'></ion-icon>
-          Galeria
-        </button>
-      </ion-col>
-
     </ion-row>
 
   </ion-card>
