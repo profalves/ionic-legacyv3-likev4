@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <img src="{{photoUrl}}" />
+
+    <ion-card-content>
+      <ion-card-title>
+        Fotos
+      </ion-card-title>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button color="primary" icon-left (click)="takePhoto('picture')">
+          <ion-icon name='camera'></ion-icon>
+          Tirar Foto
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button color="secondary" icon-left>
+          <ion-icon name='albums'></ion-icon>
+          Galeria
+        </button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-card>
+
+</ion-content>

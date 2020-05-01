@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'register',
     loadChildren: './register/register.module#RegisterPageModule'
   },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then(m => m.CameraPageModule)
+  },
 ];
 
 @NgModule({
