@@ -8,18 +8,18 @@ import { AlertController, LoadingController } from '@ionic/angular';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-  url = 'https://my-json-server.typicode.com/profalves/pos-controle-system'
+  url = 'http://localhost:5550/teste/classes'
 
   data = {
-    test: 'test',
-    description: 'one more test'
+    name: "Avocado",
+    price: 1,
+    amount: 1
   }
 
   header = {
-    "headers": {
-      "Content-Type": "application/json",
-      "X-Custom-Header": "myCustomHeader"
-    }
+    "X-Parse-REST-API-Key": "restAPIKey",
+    "X-Parse-Master-Key": "masterKey",
+    "X-Parse-Application-Id": "Appteste"
   };
 
   constructor(
@@ -28,17 +28,30 @@ export class RegisterPage implements OnInit {
     public http: HttpClient
   ) { }
 
-  ngOnInit() { }
+
+
+  ngOnInit() {
+  }
+
+  async startLoading() {
+    await this.loadingCtrl.create({
+      message: 'Carregando...'
+    });
+  }
 
   sendPostRequest() {
-    this.http.post(`${this.url}/test`, this.data, this.header).subscribe((response) => {
+    this.startLoading()
+    this.http.post(`${this.url}/products`, this.data, { headers: this.header }).subscribe((response) => {
       console.log(response);
+      this.loadingCtrl.dismiss();
     });
   }
 
   getRequest() {
-    this.http.get(`${this.url}/products`).subscribe((response) => {
+    this.startLoading()
+    this.http.get(`${this.url}/products`, { headers: this.header }).subscribe((response) => {
       console.log(response);
+      this.loadingCtrl.dismiss();
     });
   }
 
@@ -71,7 +84,7 @@ export class RegisterPage implements OnInit {
             nome: data.nome,
             email: data.email,
             telefone: data.telefone
-          }, this.header)
+          }, { headers: this.header })
             .subscribe(async (resposta) => {
               console.log(resposta);
               await loading.dismiss();
